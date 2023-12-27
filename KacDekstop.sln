@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KacDekstop", "KacDekstop\KacDekstop.csproj", "{2289F2CB-8B5F-471B-A0DD-0A33FA089EB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KacLibrary", "KacLibrary\KacLibrary.csproj", "{771B11CE-5349-49B8-851D-D26B1BC08073}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2289F2CB-8B5F-471B-A0DD-0A33FA089EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2289F2CB-8B5F-471B-A0DD-0A33FA089EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2289F2CB-8B5F-471B-A0DD-0A33FA089EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2289F2CB-8B5F-471B-A0DD-0A33FA089EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{771B11CE-5349-49B8-851D-D26B1BC08073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{771B11CE-5349-49B8-851D-D26B1BC08073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{771B11CE-5349-49B8-851D-D26B1BC08073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{771B11CE-5349-49B8-851D-D26B1BC08073}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDAB32C5-F961-4DEA-B175-5A78EF7DEF55}
+	EndGlobalSection
+EndGlobal

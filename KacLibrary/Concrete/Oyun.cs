@@ -104,6 +104,7 @@ namespace KacLibrary.Concrete
         private void BombaOlusturmaTimer_Tick(object sender, EventArgs e)
         {
             BombaOlustur();
+            KarakterBombaKontrol();
         }
         private void DusmanOlusturmaTimer_Tick(object sender, EventArgs e) 
         {
@@ -112,7 +113,9 @@ namespace KacLibrary.Concrete
         private void DusmanHareketEttirmeTimer_Tick( object sender, EventArgs e) 
         {
             DusmanHareketEt();
-           
+            KarakterDusmanKontrol();
+
+
         }
 
         public void Baslat()//Oyunu Baslat
@@ -307,7 +310,7 @@ namespace KacLibrary.Concrete
                 {
                     CanAzalt();
                     karakter.BringToFront();
-                   
+                   OyunPanel.Controls.Remove(control);
                  
                 }
             }
@@ -336,10 +339,12 @@ namespace KacLibrary.Concrete
             {
                 if (control is Dusman && karakter.Bounds.IntersectsWith(control.Bounds))
                 {
-                    Dusman dusman = control as Dusman;
-                    karakter.BringToFront();
                     CanAzalt();
-                  
+                    karakter.BringToFront();
+                   
+                    OyunPanel.Controls.Remove(control);
+
+
                 }
             }
         }
@@ -352,7 +357,6 @@ namespace KacLibrary.Concrete
             {
                 
                 control.Left -= control.Width;
-
                 
                 if (control.Left < 125) // Zeminlerin dışına çıkmışsa düşmanı kaldır.
                 {

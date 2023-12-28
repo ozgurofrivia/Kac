@@ -32,18 +32,20 @@ namespace KacDekstop
         public AnaForm()
         {
             InitializeComponent();
-         
-            oyun = new Oyun(oyunpanel,canlabel,levellabel,puanlabel);
-            oyun.GecenSureDegisti += Oyun_GecenSureDegisti;
-            oyunpanel.BackColor = Color.Transparent;
             
+            oyun = new Oyun(oyunpanel, canlabel, oyunculabel, levellabel, puanlabel);
+            oyun.GecenSureDegisti += Oyun_GecenSureDegisti;
 
         }
 
         private void AnaForm_Load(object sender, EventArgs e)
         {
             oyun.Baslat();
+            
+            oyunpanel.BackColor = Color.Transparent;
             oyunculabel.Text = oyuncuAd;
+
+
 
         }
 

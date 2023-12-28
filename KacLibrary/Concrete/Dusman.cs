@@ -10,9 +10,16 @@ namespace KacLibrary.Concrete
 {
     internal class Dusman : Cisim
     {
-        public Dusman(Size hareketAlaniBoyutlari) : base(hareketAlaniBoyutlari)
+        public Dusman(int height, Size hareketAlaniBoyutlari) : base(hareketAlaniBoyutlari)
         {
+            BringToFront();
+            Image = Image.FromFile("Resimler\\sasuke.png");
+            BackColor = Color.Transparent;
 
+            Left = 14 * 125;
+            Top = 90;
         }
+
+      
     }
 }

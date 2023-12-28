@@ -39,5 +39,17 @@ namespace KacDekstop
            
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TusForm tusForm = new TusForm();
+            tusForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SkorForm skorForm = new SkorForm();
+            skorForm.Show();
+        }
     }
 }

@@ -11,7 +11,6 @@ namespace KacLibrary.Interface
         bool DevamEdiyorMu { get; }
         TimeSpan GecenSure { get; }
 
-
         void Baslat();
         void Durdur();
         void KarakteriHareketEttir(Yon yon);

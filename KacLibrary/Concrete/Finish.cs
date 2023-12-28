@@ -19,6 +19,8 @@ namespace KacLibrary.Concrete
             BackColor = Color.Transparent;
             Width = 125;
             Height = 6 * 125;
+            Top = 90;
+            Left = 14 * 125;
         }
     }
 }

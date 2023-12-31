@@ -318,9 +318,8 @@ namespace KacLibrary.Concrete
 
         private void DusmanOlustur()
         {
-          
 
-            int satirSayisi = random.Next(0, 6);
+                int satirSayisi = random.Next(0, 6);
             
            
                 dusman = new Dusman(OyunPanel.Height, OyunPanel.Size);
@@ -530,8 +529,6 @@ namespace KacLibrary.Concrete
                 DevamEdiyorMu = false;
                 
             }
-
-            
         }
 
         private void CanYükselt() 
@@ -567,8 +564,6 @@ namespace KacLibrary.Concrete
             puan = can * 500 + (1000 - gecenSure.Seconds);
             PuanLabel.Text = puan.ToString();
             PuanLabel.Visible = true;
-
-            
         }
 
         private void TimerStop() 

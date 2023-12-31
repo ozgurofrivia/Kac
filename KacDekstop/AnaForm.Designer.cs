@@ -151,7 +151,7 @@
             this.puanlabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.puanlabel.AutoSize = true;
             this.puanlabel.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.puanlabel.Location = new System.Drawing.Point(583, 68);
+            this.puanlabel.Location = new System.Drawing.Point(589, 65);
             this.puanlabel.Name = "puanlabel";
             this.puanlabel.Size = new System.Drawing.Size(22, 21);
             this.puanlabel.TabIndex = 5;

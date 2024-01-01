@@ -1,4 +1,15 @@
-﻿using System;
+﻿/****************************************
+*    Bilişim Sistemleri Mühendisliği    *
+*    Nesneye Dayalı Programlama         *
+*                                       *
+*    Ad: Özgür                          *
+*    Soyad: Özgenç                      *
+*    Numara: B221200015                 *
+****************************************/
+
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -78,5 +89,9 @@ namespace KacDekstop
             }
         }
 
+        private void SkorForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

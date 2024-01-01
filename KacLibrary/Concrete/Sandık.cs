@@ -1,4 +1,15 @@
-﻿using KacLibrary.Abstract;
+﻿/****************************************
+*    Bilişim Sistemleri Mühendisliği    *
+*    Nesneye Dayalı Programlama         *
+*                                       *
+*    Ad: Özgür                          *
+*    Soyad: Özgenç                      *
+*    Numara: B221200015                 *
+****************************************/
+
+
+
+using KacLibrary.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -14,7 +25,7 @@ namespace KacLibrary.Concrete
         public Sandık(int height, Size hareketAlaniBoyutlari) : base(hareketAlaniBoyutlari)
         {
             BringToFront();
-            Image = Image.FromFile("Resimler\\surprizkutu.png");
+            Image = Image.FromFile("Resimler\\ramen1.png");
             BackColor = Color.Transparent;
         }
     }

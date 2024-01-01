@@ -87,6 +87,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "TusForm";
             this.Text = "TusForm";
+            this.Load += new System.EventHandler(this.TusForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

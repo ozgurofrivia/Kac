@@ -25,7 +25,7 @@ namespace KacLibrary.Concrete
         public Tuzak(int height, Size hareketAlaniBoyutlari) : base(hareketAlaniBoyutlari)
         {
             BringToFront();
-            Image = Image.FromFile("Resimler\\atestuzak.png");
+           
             BackColor = Color.Transparent;
         }
     }

@@ -40,7 +40,7 @@ namespace KacLibrary.Concrete
         private Bomba bomba;
         private Dusman dusman;
 
-        int can = 999;
+        int can = 3;
         int seviye = 1;
         int puan = 0;
 
@@ -240,6 +240,13 @@ namespace KacLibrary.Concrete
         {
             int top = 90;
             int left = 125;
+            Random random = new Random(); // Rastgele seçim için random nesnesi
+
+            // 3 tuzak resmini manuel olarak tanımlama
+            Image tuzakResim1 = Image.FromFile("Resimler\\atestuzak.png");
+            Image tuzakResim2 = Image.FromFile("Resimler\\chidori.png");
+            Image tuzakResim3 = Image.FromFile("Resimler\\sasukesharingan.png");
+
             for (int i = 0; i < 6; i++)
             {
                 for (int j = 0; j < 13; j++)
@@ -247,6 +254,24 @@ namespace KacLibrary.Concrete
                     if (random.Next(10) < 2) // Yüzde 20 olasılıkla tuzak ekler
                     {
                         Tuzak tuzak = new Tuzak(OyunPanel.Height, OyunPanel.Size);
+
+                        // Rastgele bir tuzak resmi seçme
+                        int randomResimIndex = random.Next(3); // 0, 1 veya 2
+
+                        // Tuzak resmini ayarla
+                        switch (randomResimIndex)
+                        {
+                            case 0:
+                                tuzak.Image = tuzakResim1;
+                                break;
+                            case 1:
+                                tuzak.Image = tuzakResim2;
+                                break;
+                            case 2:
+                                tuzak.Image = tuzakResim3;
+                                break;
+                        }
+
                         tuzak.Left = left;
                         tuzak.Top = top;
                         tuzak.Visible = false;
@@ -259,6 +284,8 @@ namespace KacLibrary.Concrete
                 left = 125;
             }
         }
+
+
 
 
         private void KarakterTuzakKontrol() //Karakterin tuzakla etkileşimini kontrol eden bir fonksiyon
@@ -287,7 +314,7 @@ namespace KacLibrary.Concrete
                 OyunPanel.Controls.Remove(control);
             }
 
-            // Rastgele 10 zemin seçip bomba yerleştir
+            // Rastgele 15 zemin seçip bomba yerleştir
             for (int i = 0; i < 15; i++)
             {
                 int randomIndex = random.Next(OyunPanel.Controls.Count);
@@ -320,13 +347,8 @@ namespace KacLibrary.Concrete
         {
 
                 int satirSayisi = random.Next(0, 6);
-            
-           
                 dusman = new Dusman(OyunPanel.Height, OyunPanel.Size);
-
-                
                 dusman.Top = dusman.Top+ dusman.Width * satirSayisi;
-
                 OyunPanel.Controls.Add(dusman);
                 dusman.BringToFront();
             
@@ -342,13 +364,9 @@ namespace KacLibrary.Concrete
                     karakter.BringToFront();
                    
                     OyunPanel.Controls.Remove(control);
-
-
                 }
             }
         }
-
-
 
         private void DusmanHareketEt()
         {
@@ -544,7 +562,6 @@ namespace KacLibrary.Concrete
 
         public void YuksekSkorlarıKaydet(string oyuncuAdı, int skor)
         {
-            // Bu kontrolü ekleyin
             if (yuksekSkorlar == null)
             {
                 yuksekSkorlar = new List<string>();
@@ -582,11 +599,11 @@ namespace KacLibrary.Concrete
             YuksekSkorlarıKaydet(OyuncuAd.Text, puan);
             if (can == 0) 
             {
-                MessageBox.Show("Başaramadın");
+                MessageBox.Show("Olmadı, olsun");
             }
             else 
             {
-                MessageBox.Show("Neyi başaramadım");
+                MessageBox.Show("Helal be!");
             }
             Application.Exit();
         }

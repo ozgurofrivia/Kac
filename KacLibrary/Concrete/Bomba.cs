@@ -1,4 +1,15 @@
-﻿using KacLibrary.Abstract;
+﻿/****************************************
+*    Bilişim Sistemleri Mühendisliği    *
+*    Nesneye Dayalı Programlama         *
+*                                       *
+*    Ad: Özgür                          *
+*    Soyad: Özgenç                      *
+*    Numara: B221200015                 *
+****************************************/
+
+
+
+using KacLibrary.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Drawing;

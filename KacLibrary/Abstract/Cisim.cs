@@ -67,15 +67,15 @@ namespace KacLibrary.Abstract
 
         private bool AsagiHareketEttir()
         {
-            if(Bottom == HareketAlaniBoyutlari.Height -90) { return true; }
+            if(Bottom == HareketAlaniBoyutlari.Width - (HareketAlaniBoyutlari.Width - (6 * 125 + 90))) { return true; }
 
             else 
             {
                 var yeniBottom = Bottom + HareketMesafesi;
-                var tasacakMi = Bottom > HareketAlaniBoyutlari.Height - 90;
-                var bottom = tasacakMi ? HareketAlaniBoyutlari.Height - 90 : yeniBottom;
+                var tasacakMi = Bottom > HareketAlaniBoyutlari.Width - (HareketAlaniBoyutlari.Width - (6 * 125 + 90));
+                var bottom = tasacakMi ? HareketAlaniBoyutlari.Width - (HareketAlaniBoyutlari.Width - (6 * 125 + 90)) : yeniBottom;
                 Top = bottom - Height;
-                return Bottom == HareketAlaniBoyutlari.Height-90;
+                return Bottom == HareketAlaniBoyutlari.Width - (HareketAlaniBoyutlari.Width - (6 * 125 + 90));
             }
 
         }

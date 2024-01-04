@@ -1,0 +1,48 @@
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\bin\Debug\KacDekstop.exe.config
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\bin\Debug\KacDekstop.exe
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\bin\Debug\KacDekstop.pdb
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\bin\Debug\KacLibrary.dll
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\bin\Debug\KacLibrary.pdb
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\obj\Debug\KacDekstop.csproj.AssemblyReference.cache
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\obj\Debug\KacDekstop.AnaForm.resources
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\obj\Debug\KacDekstop.MenuForm.resources
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\obj\Debug\KacDekstop.Properties.Resources.resources
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\obj\Debug\KacDekstop.csproj.GenerateResource.cache
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\obj\Debug\KacDekstop.csproj.CoreCompileInputs.cache
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\obj\Debug\KacDekstop.csproj.CopyComplete
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\obj\Debug\KacDekstop.exe
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\obj\Debug\KacDekstop.pdb
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\obj\Debug\KacDekstop.TusForm.resources
+C:\Users\ozgur\source\repos\KacDekstop\KacDekstop\obj\Debug\KacDekstop.SkorForm.resources
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\bin\Debug\KacDekstop.exe.config
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\bin\Debug\KacDekstop.exe
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\bin\Debug\KacDekstop.pdb
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\bin\Debug\KacLibrary.dll
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\bin\Debug\KacLibrary.pdb
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\obj\Debug\KacDekstop.csproj.AssemblyReference.cache
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\obj\Debug\KacDekstop.AnaForm.resources
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\obj\Debug\KacDekstop.MenuForm.resources
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\obj\Debug\KacDekstop.Properties.Resources.resources
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\obj\Debug\KacDekstop.SkorForm.resources
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\obj\Debug\KacDekstop.TusForm.resources
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\obj\Debug\KacDekstop.csproj.GenerateResource.cache
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\obj\Debug\KacDekstop.csproj.CoreCompileInputs.cache
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\obj\Debug\KacDekstop.csproj.CopyComplete
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\obj\Debug\KacDekstop.exe
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacDekstop\obj\Debug\KacDekstop.pdb
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\bin\Debug\KacDekstop.exe.config
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\bin\Debug\KacDekstop.exe
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\bin\Debug\KacDekstop.pdb
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\bin\Debug\KacLibrary.dll
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\bin\Debug\KacLibrary.pdb
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\obj\Debug\KacDekstop.csproj.AssemblyReference.cache
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\obj\Debug\KacDekstop.AnaForm.resources
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\obj\Debug\KacDekstop.MenuForm.resources
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\obj\Debug\KacDekstop.Properties.Resources.resources
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\obj\Debug\KacDekstop.SkorForm.resources
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\obj\Debug\KacDekstop.TusForm.resources
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\obj\Debug\KacDekstop.csproj.GenerateResource.cache
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\obj\Debug\KacDekstop.csproj.CoreCompileInputs.cache
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\obj\Debug\KacDekstop.csproj.CopyComplete
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\obj\Debug\KacDekstop.exe
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacDekstop\obj\Debug\KacDekstop.pdb

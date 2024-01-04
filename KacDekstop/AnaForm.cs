@@ -35,18 +35,12 @@ namespace KacDekstop
             
             oyun = new Oyun(oyunpanel, canlabel, oyunculabel, levellabel, puanlabel);
             oyun.GecenSureDegisti += Oyun_GecenSureDegisti;
-
         }
 
         private void AnaForm_Load(object sender, EventArgs e)
         {
             oyun.Baslat();
-            
-            oyunpanel.BackColor = Color.Transparent;
             oyunculabel.Text = oyuncuAd;
-
-
-
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -77,10 +71,11 @@ namespace KacDekstop
             }
         }
 
-        private void Oyun_GecenSureDegisti(object sender, EventArgs e) 
+        private void Oyun_GecenSureDegisti(object sender, EventArgs e)
         {
-            surelabel.Text = $"{oyun.GecenSure.Seconds}";
+            surelabel.Text = $"{oyun.GecenSure.TotalSeconds} saniye";
         }
+
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {

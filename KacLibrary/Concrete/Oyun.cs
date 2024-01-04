@@ -114,8 +114,6 @@ namespace KacLibrary.Concrete
         {
             DusmanHareketEt();
             KarakterDusmanKontrol();
-
-
         }
 
         public void Baslat()//Oyunu Baslat
@@ -129,8 +127,6 @@ namespace KacLibrary.Concrete
                 KarakterOlustur();
                 ZeminOlustur();
                 TuzakOlustur();
-
-
 
                 gecenSureTimer.Start();
                 sandikOlusturmaTimer.Start();
@@ -187,9 +183,6 @@ namespace KacLibrary.Concrete
 
             OyunPanel.Controls.Add(karakter);
         }
-
-        
-       
 
         public void KarakteriHareketEttir(Yon yon)
         {
@@ -286,8 +279,6 @@ namespace KacLibrary.Concrete
         }
 
 
-
-
         private void KarakterTuzakKontrol() //Karakterin tuzakla etkileşimini kontrol eden bir fonksiyon
         {
             // Karakterin konumu ile tuzakların konumunu kontrol et
@@ -305,7 +296,6 @@ namespace KacLibrary.Concrete
             }
         }
 
-
         private void BombaOlustur()
         {
             // Mevcut bombaları temizle
@@ -317,17 +307,43 @@ namespace KacLibrary.Concrete
             // Rastgele 15 zemin seçip bomba yerleştir
             for (int i = 0; i < 15; i++)
             {
-                int randomIndex = random.Next(OyunPanel.Controls.Count);
-                Control selectedZemin = OyunPanel.Controls[randomIndex];
+                Zemin selectedZemin = GetRandomZemin();
 
-                Bomba bomba = new Bomba(OyunPanel.Height, OyunPanel.Size);
-                bomba.Left = selectedZemin.Left;
-                bomba.Top = selectedZemin.Top;
-
-                OyunPanel.Controls.Add(bomba);
-                bomba.BringToFront();
+                if (selectedZemin != null)
+                {
+                    Bomba bomba = new Bomba(OyunPanel.Height, OyunPanel.Size);
+                    bomba.Left = selectedZemin.Left;
+                    bomba.Top = selectedZemin.Top;
+                    OyunPanel.Controls.Add(bomba);
+                    bomba.BringToFront();
+                }
             }
         }
+
+        private Zemin GetRandomZemin()
+        {
+            // Zemin sayısı yetersizse null döndür
+            if (OyunPanel.Controls.OfType<Zemin>().Count() < 15)
+            {
+                return null;
+            }
+
+            // Rastgele bir zemin seç
+            int randomIndex = random.Next(OyunPanel.Controls.Count);
+            Control selectedControl = OyunPanel.Controls[randomIndex];
+
+            // Seçilen kontrol bir Zemin mi diye kontrol et
+            if (selectedControl is Zemin)
+            {
+                return (Zemin)selectedControl;
+            }
+            else
+            {
+                // Eğer seçilen kontrol bir Zemin değilse, tekrar seç
+                return GetRandomZemin();
+            }
+        }
+
 
         private void KarakterBombaKontrol()  //Karakterin bombayla etkileşimini kontrol eden bir fonksiyon
         {
@@ -354,7 +370,7 @@ namespace KacLibrary.Concrete
             
         }
 
-        private void KarakterDusmanKontrol()
+        private void KarakterDusmanKontrol() //Karakterin düşmanla etkileşimini kontrol eden bir fonksiyon
         {
             foreach (Control control in OyunPanel.Controls)
             {
@@ -368,7 +384,7 @@ namespace KacLibrary.Concrete
             }
         }
 
-        private void DusmanHareketEt()
+        private void DusmanHareketEt() 
         {
             foreach (Control control in OyunPanel.Controls.OfType<Dusman>().ToList())
             {
@@ -382,32 +398,22 @@ namespace KacLibrary.Concrete
             }
         }
 
-
         private void SandıkOlustur()
         {
-            Sandık sandik = new Sandık(OyunPanel.Height, OyunPanel.Size);
+            Zemin selectedZemin = GetRandomZemin();
 
-            // Sandığı rastgele bir konuma yerleştir
-            
-
-            // Zemin nesnelerini bul
-            var zeminNesneleri = OyunPanel.Controls.OfType<Zemin>().ToArray();
-
-            if (zeminNesneleri.Length > 0)
+            if (selectedZemin != null)
             {
-                // Rastgele bir zemin seç
-                Zemin rastgeleZemin = zeminNesneleri[random.Next(zeminNesneleri.Length)];
-
-                // Sandığı seçilen zeminin içine yerleştir
-                sandik.Left = random.Next(rastgeleZemin.Left, rastgeleZemin.Right - sandik.Width);
-                sandik.Top = rastgeleZemin.Top - sandik.Height;
-
+                Sandık sandik = new Sandık(OyunPanel.Height, OyunPanel.Size);
+                sandik.Left = selectedZemin.Left;
+                sandik.Top = selectedZemin.Top;
                 OyunPanel.Controls.Add(sandik);
                 sandik.BringToFront();
             }
+        
         }
 
-        private void KarakterSandikKontrol()
+        private void KarakterSandikKontrol()//Karakterin sandıkla etkileşimini kontrol eden bir fonksiyon
         {
             foreach (Control control in OyunPanel.Controls)
             {
@@ -416,11 +422,11 @@ namespace KacLibrary.Concrete
                    
                     double rastgeleOlasilik = random.NextDouble(); // 0 ile 1 arasında rastgele bir sayı
 
-                    if (rastgeleOlasilik < 0.8) // %80 ihtimalle iyi bir olay
+                    if (rastgeleOlasilik < 0.8) // %80 ihtimalle canı 1 arttır
                     {
                         CanYükselt();
                     }
-                    else // %20 ihtimalle kötü bir olay
+                    else // %20 ihtimalle canı 1 azalt
                     {
                         CanAzalt();
                     }
@@ -438,7 +444,7 @@ namespace KacLibrary.Concrete
             OyunPanel.Controls.Add(finish);
         }
 
-        private void FinisheGeldiMi() 
+        private void FinisheGeldiMi() //Finish çizgisine ulaşılıp ulaşılmadığını kontrol eder
         {
             if(karakter.Location.X == finish.Location.X) 
             {
@@ -451,24 +457,24 @@ namespace KacLibrary.Concrete
             }
         }
 
-        private void SeviyeAtla() 
+        private void SeviyeAtla() // Finishteyse seviyeyi 1 arttır ve Sfırla fonksiyonunu çağır
         {
-            
             seviye++;
             Sıfırla();
             switch (seviye)
             {
-                case 2:
-                    SeviyeAtlaD();
+                case 2: // Seviye 2 olunca bombaOlusturmaTimer çalışsın
+                    SeviyeAtlaD(); 
                     bombaOlusturmaTimer.Start();
                     break;
-                case 3:
+                case 3: // Seviye 3 olunca bombaOlusturmaTimer dursun, dusmanOlusturmaTimer ve dusmanHareketEttirmeTimer çalışsın
+                    dusmanHareketEttirmeTimer.Start();
                     SeviyeAtlaD();
                     bombaOlusturmaTimer.Stop();
                     dusmanOlusturmaTimer.Start();
                     dusmanHareketEttirmeTimer.Start();
                     break;
-                case 4:
+                case 4: // Eğer 4. kez finishe gelinmişse oyun bitmiş demektir oyunu bitir.
 
                     OyunBitti();
                    
@@ -491,17 +497,17 @@ namespace KacLibrary.Concrete
             SeviyeLabel.Text = seviye.ToString();
         }
 
-        private void Sıfırla() 
+        private void Sıfırla()  // Her seviye atladıktan sonra paneli temizler
         {
             OyunPanel.Controls.Remove(karakter); // Karakteri kaldır
 
-            // Zemin nesnelerini bul ve kaldır
+            // Zeminleri bul ve kaldır
             foreach (Control control in OyunPanel.Controls.OfType<Zemin>().ToList())
             {
                 OyunPanel.Controls.Remove(control);
             }
 
-            // Tuzak nesnelerini bul ve kaldır
+            // Tuzakları bul ve kaldır
             if (seviye == 2) 
             {
                 foreach (Control control in OyunPanel.Controls.OfType<Tuzak>().ToList())
@@ -510,6 +516,7 @@ namespace KacLibrary.Concrete
                 }
             }
 
+            // Bombaları bul ve kaldır
             if(seviye == 3) 
             {
                 foreach (Control control in OyunPanel.Controls.OfType<Bomba>().ToList())
@@ -518,6 +525,7 @@ namespace KacLibrary.Concrete
                 }
             }
 
+            // Düşmanları bul ve kaldır
             if (seviye == 4)
             {
                 foreach (Control control in OyunPanel.Controls.OfType<Dusman>().ToList())
@@ -526,11 +534,13 @@ namespace KacLibrary.Concrete
                 }
             }
 
+            // Sandıkları Kaldır
             foreach (Control control in OyunPanel.Controls.OfType<Sandık>().ToList())
             {
                 OyunPanel.Controls.Remove(control);
             }
 
+            // Finisihi kaldır
             OyunPanel.Controls.Remove(finish);
 
         }
@@ -583,7 +593,7 @@ namespace KacLibrary.Concrete
             PuanLabel.Visible = true;
         }
 
-        private void TimerStop() 
+        private void TimerStop() // Timerları topluca durdurur
         {
             bombaOlusturmaTimer.Stop();
             gecenSureTimer.Stop();
@@ -592,7 +602,7 @@ namespace KacLibrary.Concrete
             dusmanHareketEttirmeTimer.Stop();  
         }
 
-        private void OyunBitti() 
+        private void OyunBitti() // Oyun bittiyse timerları durdur, puanı hesapla ve text dosyasına kaydet
         {
             TimerStop();
             PuanHesapla();

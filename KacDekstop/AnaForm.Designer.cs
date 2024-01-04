@@ -63,15 +63,15 @@
             this.bilgipanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.bilgipanel.Location = new System.Drawing.Point(0, 0);
             this.bilgipanel.Name = "bilgipanel";
-            this.bilgipanel.Size = new System.Drawing.Size(646, 100);
+            this.bilgipanel.Size = new System.Drawing.Size(1425, 100);
             this.bilgipanel.TabIndex = 0;
             // 
             // oyunculabel
             // 
-            this.oyunculabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.oyunculabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.oyunculabel.AutoSize = true;
             this.oyunculabel.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.oyunculabel.Location = new System.Drawing.Point(509, 68);
+            this.oyunculabel.Location = new System.Drawing.Point(1272, 29);
             this.oyunculabel.Name = "oyunculabel";
             this.oyunculabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.oyunculabel.Size = new System.Drawing.Size(125, 21);
@@ -84,7 +84,7 @@
             this.OYUNCU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.OYUNCU.AutoSize = true;
             this.OYUNCU.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.OYUNCU.Location = new System.Drawing.Point(534, 29);
+            this.OYUNCU.Location = new System.Drawing.Point(1170, 29);
             this.OYUNCU.Name = "OYUNCU";
             this.OYUNCU.Size = new System.Drawing.Size(96, 21);
             this.OYUNCU.TabIndex = 17;
@@ -95,7 +95,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(803, 29);
+            this.label1.Location = new System.Drawing.Point(940, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 21);
             this.label1.TabIndex = 16;
@@ -105,7 +105,7 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(322, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(673, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(50, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -117,7 +117,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-188, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(332, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -139,7 +139,7 @@
             this.levellabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.levellabel.AutoSize = true;
             this.levellabel.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.levellabel.Location = new System.Drawing.Point(830, 65);
+            this.levellabel.Location = new System.Drawing.Point(1025, 29);
             this.levellabel.Name = "levellabel";
             this.levellabel.Size = new System.Drawing.Size(22, 21);
             this.levellabel.TabIndex = 7;
@@ -151,7 +151,7 @@
             this.puanlabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.puanlabel.AutoSize = true;
             this.puanlabel.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.puanlabel.Location = new System.Drawing.Point(336, 65);
+            this.puanlabel.Location = new System.Drawing.Point(729, 29);
             this.puanlabel.Name = "puanlabel";
             this.puanlabel.Size = new System.Drawing.Size(22, 21);
             this.puanlabel.TabIndex = 5;
@@ -163,7 +163,7 @@
             this.canlabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.canlabel.AutoSize = true;
             this.canlabel.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.canlabel.Location = new System.Drawing.Point(-168, 68);
+            this.canlabel.Location = new System.Drawing.Point(388, 29);
             this.canlabel.Name = "canlabel";
             this.canlabel.Size = new System.Drawing.Size(22, 21);
             this.canlabel.TabIndex = 3;
@@ -174,7 +174,7 @@
             // 
             this.surelabel.AutoSize = true;
             this.surelabel.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.surelabel.Location = new System.Drawing.Point(27, 68);
+            this.surelabel.Location = new System.Drawing.Point(68, 29);
             this.surelabel.Name = "surelabel";
             this.surelabel.Size = new System.Drawing.Size(22, 21);
             this.surelabel.TabIndex = 1;
@@ -187,14 +187,14 @@
             this.oyunpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.oyunpanel.Location = new System.Drawing.Point(0, 100);
             this.oyunpanel.Name = "oyunpanel";
-            this.oyunpanel.Size = new System.Drawing.Size(646, 525);
+            this.oyunpanel.Size = new System.Drawing.Size(1425, 525);
             this.oyunpanel.TabIndex = 1;
             // 
             // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(646, 625);
+            this.ClientSize = new System.Drawing.Size(1425, 625);
             this.Controls.Add(this.oyunpanel);
             this.Controls.Add(this.bilgipanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

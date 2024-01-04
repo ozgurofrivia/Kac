@@ -1,0 +1,18 @@
+C:\Users\ozgur\source\repos\KacDekstop\KacLibrary\bin\Debug\KacLibrary.dll
+C:\Users\ozgur\source\repos\KacDekstop\KacLibrary\bin\Debug\KacLibrary.pdb
+C:\Users\ozgur\source\repos\KacDekstop\KacLibrary\obj\Debug\KacLibrary.csproj.AssemblyReference.cache
+C:\Users\ozgur\source\repos\KacDekstop\KacLibrary\obj\Debug\KacLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ozgur\source\repos\KacDekstop\KacLibrary\obj\Debug\KacLibrary.dll
+C:\Users\ozgur\source\repos\KacDekstop\KacLibrary\obj\Debug\KacLibrary.pdb
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacLibrary\bin\Debug\KacLibrary.dll
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacLibrary\bin\Debug\KacLibrary.pdb
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacLibrary\obj\Debug\KacLibrary.csproj.AssemblyReference.cache
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacLibrary\obj\Debug\KacLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacLibrary\obj\Debug\KacLibrary.dll
+C:\Users\ozgur\OneDrive\Desktop\KacDekstop\KacLibrary\obj\Debug\KacLibrary.pdb
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacLibrary\bin\Debug\KacLibrary.dll
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacLibrary\bin\Debug\KacLibrary.pdb
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacLibrary\obj\Debug\KacLibrary.csproj.AssemblyReference.cache
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacLibrary\obj\Debug\KacLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacLibrary\obj\Debug\KacLibrary.dll
+C:\Users\ozgur\OneDrive\Desktop\Özgür Özgenç-B221200015-Nesneye Dayalı Programlama\KacDekstop\KacLibrary\obj\Debug\KacLibrary.pdb

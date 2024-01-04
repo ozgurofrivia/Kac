@@ -67,7 +67,7 @@ namespace KacDekstop
                     int count = 0;
                     foreach (var item in scoreList.Take(5))
                     {
-                        skorListBox.Items.Add($"{item.Item1} - {item.Item2}");
+                        skorListBox.Items.Add($"{item.Item1} {item.Item2}");
                         count++;
                     }
 
